@@ -7,13 +7,13 @@ import pandas as pd
 # 通常、予測結果ファイルは [index, 正味作業時間, 付帯作業時間] の形式
 
 # file1: メインモデルの予測結果（最も高い重みを設定予定）
-file1 = pd.read_csv('/kaggle/input/steelpipe-submission/submission_20241215_161821.csv', header=None)
+file1 = pd.read_csv('/kaggle/input/lightgbm-submission/submission_20241215_161821.csv', header=None)
 
 # file2: サブモデル1の予測結果（中程度の重みを設定予定）
-file2 = pd.read_csv('/kaggle/input/s003-2submission-2/s003submission (2).csv', header=None)
+file2 = pd.read_csv('/kaggle/input/rl003-2submission-2/s003submission (2).csv', header=None)
 
 # file3: サブモデル2の予測結果（最も低い重みを設定予定）
-file3 = pd.read_csv('/kaggle/input/ag014-submission/submission (4).csv', header=None)
+file3 = pd.read_csv('/kaggle/input/ag001-submission/submission (4).csv', header=None)
 
 # =======================================
 # 2. アンサンブル重みの設定
